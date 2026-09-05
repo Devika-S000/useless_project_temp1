@@ -39,10 +39,22 @@ For Hardware:
 ### Implementation
 For Software:
 # Installation
-[commands]
+```powershell
+pip install fastapi uvicorn google-genai python-dotenv
+```
+
+Create a `.env` file and add your Gemini key:
+
+```text
+GEMINI_API_KEY=your_key_here
+```
 
 # Run
-[commands]
+```powershell
+uvicorn main1:app --reload
+```
+
+Open http://127.0.0.1:8000 in your browser.
 
 ### Project Documentation
 For Software:

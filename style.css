@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #0d0220;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================
+   CHATBOT
+========================= */
+
+.chatbot {
+    width: 400px;
+
+    max-width: 90%;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    padding: 20px;
+
+    text-align: center;
+
+    background: #d9c2ff;
+}
+
+
+.cat-face {
+    font-size: 55px;
+}
+
+
+.header h1 {
+    margin: 5px 0;
+
+    font-size: 26px;
+}
+
+
+.header p {
+    margin: 5px 0;
+
+    color: #555;
+}
+
+
+/* =========================
+   CHAT AREA
+========================= */
+
+.chat {
+    height: 400px;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    background: #fafafa;
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+.message {
+    padding: 12px 15px;
+
+    margin-bottom: 5px;
+
+    border-radius: 15px;
+
+    max-width: 80%;
+
+    word-wrap: break-word;
+}
+
+
+/* Cat message */
+
+.bot-message {
+    background: #e5d5ff;
+
+    margin-right: auto;
+}
+
+
+/* User message */
+
+.user-message {
+    background: #d9f4ff;
+
+    margin-left: auto;
+
+    text-align: right;
+}
+
+
+/* Translation */
+
+.translation {
+    font-size: 13px;
+
+    color: #666;
+
+    margin-left: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   INPUT AREA
+========================= */
+
+.input-area {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border-top: 1px solid #ddd;
+
+    background: white;
+}
+
+
+#userInput {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+#userInput:focus {
+    border-color: #9b6edb;
+}
+
+
+#sendButton {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #9b6edb;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#sendButton:hover {
+    opacity: 0.85;
+}
+
+
+@media (max-width: 500px) {
+
+    .chatbot {
+        width: 95%;
+    }
+
+    .chat {
+        height: 350px;
+    }
+
+}body {
+    background-color: purple;
+}
+
+h1 {
+    color: white;
+}
